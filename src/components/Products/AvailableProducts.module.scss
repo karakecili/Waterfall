@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.Products {
+  margin: 2rem auto;
+  animation: Products-appear 1s ease-out forwards;
+  
+  display: flex;
+  flex-direction: column;
+  
+
+  &_List {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $white-2;
+    padding: 6rem 0;
+    justify-content: space-evenly;
+  }
+}
+
+@keyframes Products-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

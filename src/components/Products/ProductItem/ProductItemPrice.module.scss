@@ -1,0 +1,56 @@
+@import '../../../variables.scss';
+
+.button {
+  font: inherit;
+  cursor: pointer;
+  color: $white-1;
+  border-radius: 3rem;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  
+  text-align: center;
+
+  background: $button-1;
+  border: 3px solid $white-1;
+}
+
+.button:hover,
+.button:active {
+  background-color: $button-2;
+  border-color: $button-2;
+}
+
+
+.price {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: $button-1;
+}
+
+.price_Discount {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: $button-1;
+}
+
+.price_noDiscount {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-decoration-line: line-through;
+
+  color: rgba(85, 85, 85, 0.45);
+}

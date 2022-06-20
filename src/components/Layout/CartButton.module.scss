@@ -1,0 +1,97 @@
+@import '../../variables.scss';
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: $button-1;
+  border-radius: 12px;;
+  color: $white-1;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  gap: 0.5rem;
+  height: 4rem;
+
+  &:hover,:active {
+    background-color: $button-3;
+  }
+
+  &.button:hover .badge,
+  &.button:active .badge {
+    background-color: $button-5;
+  }
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: $button-4;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+  
+  margin-left: 5rem;
+
+  &_Label {
+    display: flex;
+    align-items: flex-end;
+    color: $white-1;
+    opacity: 0.7;
+    line-height: 1,5rem;
+    font-size: 0.8rem;
+  }
+
+  &_Value {
+    font-weight: bold;
+  }
+
+  &_Red {
+    top: 0;
+    position: absolute;
+    color: $white-1;
+    background-color: red;
+    border-radius: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    right: auto; 
+    margin-left: 0.1rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
